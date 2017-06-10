@@ -1,2 +1,2 @@
 # C-Primer-Plus
-personal work of C Primer Plus
+personal exercise of C Primer Plus

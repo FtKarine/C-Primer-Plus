@@ -1,0 +1,23 @@
+#include<stdio.h>
+void chline(char ch,int a,int b);
+int main()
+{
+    int h,l;
+    char ch1;
+    printf("Please enter an charater: \n");
+    scanf("%c",&ch1);
+    printf("Next please enter row and rank: \n");
+    scanf("%d %d",&h,&l);
+    chline(ch1,h,l);
+    return 0;
+}
+void chline(char ch,int a,int b)
+{
+    int i,j;
+    for(i=1;i<=a;i++)
+    {
+        for(j=1;j<=b;j++)
+            putchar(ch);
+        putchar('\n');
+    }
+}

@@ -1,0 +1,18 @@
+#include<stdio.h>
+double avanum(double x,double y);
+int main()
+{
+    double i,j;
+    printf("Please enter two numbers: \n");
+    scanf("%lf %lf",&i,&j);
+    if(i!=0&&j!=0)
+        avanum(i,j);
+    printf("%lf",avanum(i,j));
+    return 0;
+}
+double avanum(double x,double y)
+{
+    double an;
+    an=1/((1/x+1/y)/2);
+    return an;
+}

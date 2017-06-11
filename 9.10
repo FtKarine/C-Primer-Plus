@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,num;
+    int num1=1,num2=1;
+    printf("Please enter an integer :\n");
+    scanf("%d",&n);
+    printf("%d %d",num1,num2);
+    for(i=1;i<=n-2;i++)
+    {
+        num=num1+num2;
+        num1=num2;
+        num2=num;
+        printf(" %d",num);
+    }
+    return 0;
+}

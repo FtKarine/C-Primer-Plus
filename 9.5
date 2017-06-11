@@ -1,0 +1,19 @@
+#include<stdio.h>
+double larger_of(double u,double v);
+int main()
+{
+    double i,j;
+    printf("Please enter two numbers:\n");
+    scanf("%lf %lf",&i,&j);
+    larger_of(i,j);
+    printf("The bigger one is: %lf and x is %lf y is %lf",larger_of(i,j),i,j);
+    return 0;
+}
+double larger_of(double u,double v)
+{
+    double largernum;
+    largernum=(u>v)?u:v;
+    u=largernum;
+    v=largernum;
+    return largernum;
+}

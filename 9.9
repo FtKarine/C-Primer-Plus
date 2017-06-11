@@ -1,0 +1,29 @@
+#include<stdio.h>
+void to_base_n(unsigned long x,int n);
+int main()
+{
+    unsigned long num;
+    int y;
+    printf("Enter an integer and a base n(q to quit): \n");
+    while(scanf("%lu %d",&num,&y)==2)
+    {
+        printf("base %d equivalent: ",y);
+        to_base_n(num,y);
+        putchar('\n');
+        printf("Enter an integer(q to quit): \n");
+    }
+    printf("Done.\n");
+    return 0;
+}
+void to_base_n(unsigned long x,int n)
+{
+    if(n>=2&&n<=10)
+    {
+        int r;
+        r=x%n;
+        if(x>=n)
+            to_base_n(x/n,n);
+        putchar('0'+r);
+        return;
+    }
+}
